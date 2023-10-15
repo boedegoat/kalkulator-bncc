@@ -145,6 +145,9 @@ void remove_trailing_zeros(char* numStr) {
                 break;
             }
         }
+        if (numStr[i] == '.') {
+            i--;
+        }
         numStr[i + 1] = '\0';
     }
 }
